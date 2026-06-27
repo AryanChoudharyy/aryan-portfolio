@@ -1,3 +1,5 @@
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
+
 export type Project = {
   title: string;
   subtitle: string;
@@ -18,7 +20,7 @@ export const links = {
   email: "mailto:mailmeataryan747@gmail.com",
   linkedin: "https://www.linkedin.com/in/aryan-choudhary-b14665280/",
   github: "https://github.com/AryanChoudharyy",
-  resume: "/Aryan_Choudhary_Nexo.pdf",
+  resume: `${basePath}/Aryan_Choudhary_Nexo.pdf`,
 };
 
 export const experience = [
